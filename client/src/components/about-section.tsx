@@ -22,7 +22,7 @@ export default function AboutSection() {
             The Laboratory
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto" data-testid="about-subtitle">
-            A digital playground where simple ideas meet playful experiments and learning never stops
+            A digital playground where simple ideas meet playful experiments
           </p>
         </div>
         
