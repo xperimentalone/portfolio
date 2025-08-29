@@ -39,7 +39,7 @@ export default function Footer() {
         
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground" data-testid="footer-copyright">
-            &copy; 2024 XperimentalOne. All experiments are conducted with passion and curiosity.
+            &copy; 2025 XperimentalOne. All experiments are conducted with passion and curiosity.
           </p>
         </div>
       </div>
