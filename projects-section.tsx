@@ -110,7 +110,7 @@ export default function ProjectsSection() {
         <div className="mb-20">
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 gray-gradient rounded-lg flex items-center justify-center mr-4">
-              <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+              <svg className="w-6 h-6 text-accent-foreground" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.26-.02.2-.01h4.4l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09z"/>
               </svg>
             </div>
@@ -170,7 +170,7 @@ export default function ProjectsSection() {
         <div className="mb-20">
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 cyan-gradient rounded-lg flex items-center justify-center mr-4">
-              <Box className="w-6 h-6 text-secondary" />
+              <Box className="w-6 h-6 text-foreground" />
             </div>
             <h3 className="text-3xl font-bold text-secondary" data-testid="unity-projects-title">Unity Projects</h3>
           </div>
@@ -219,7 +219,7 @@ export default function ProjectsSection() {
             <h3 className="text-3xl font-bold text-primary" data-testid="applications-title">Applications</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 max-w-3xl mx-auto">
             {applications.map((app) => (
               <div key={app.id} className="project-card rounded-lg p-8 hover-lift" data-testid={`application-${app.id}`}>
                 <div className="mb-6">
