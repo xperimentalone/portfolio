@@ -213,53 +213,46 @@ export default function ProjectsSection() {
         {/* Applications */}
         <div className="mb-20">
           <div className="flex items-center mb-8">
-            <div className="w-12 h-12 cyan-gradient rounded-lg flex items-center justify-center mr-4">
-              <ChartBar className="w-6 h-6 text-accent-foreground" />
+            {/* Optional: Add an icon and heading for Applications */}
+            <div className="w-12 h-12 gray-gradient rounded-lg flex items-center justify-center mr-4">
+              <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+              </svg>
             </div>
-            <h3 className="text-3xl font-bold text-primary" data-testid="applications-title">Applications</h3>
+            <h3 className="text-3xl font-bold text-primary">Applications</h3>
           </div>
-          
-          <div className="grid md:grid-cols-2 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
             {applications.map((app) => (
-              <div key={app.id} className="project-card rounded-lg p-8 hover-lift" data-testid={`application-${app.id}`}>
-                <div className="mb-6">
+              <div key={app.id} className="project-card rounded-lg p-6 hover-lift" data-testid={`application-${app.id}`}>
+                <div className="mb-4">
                   <img 
                     src={app.image}
                     alt={app.title}
-                    className="w-full h-64 object-cover rounded-lg"
+                    className="w-full h-32 object-cover rounded-lg"
                     data-testid={`image-${app.id}`}
                   />
                 </div>
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 cyan-gradient rounded-full flex items-center justify-center mr-4">
-                    <app.icon className="w-5 h-5 text-accent-foreground" />
+                <div className="flex items-center mb-3">
+                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-2 overflow-hidden">
+                    {/* If you have an icon image, use <img src={app.iconImage} ... /> */}
+                    {app.icon && <app.icon className="w-4 h-4 text-white" />}
                   </div>
-                  <h4 className="text-2xl font-bold" data-testid={`title-${app.id}`}>{app.title}</h4>
+                  <h4 className="text-lg font-bold" data-testid={`title-${app.id}`}>{app.title}</h4>
                 </div>
-                <p className="text-muted-foreground mb-6 text-lg" data-testid={`description-${app.id}`}>
+                <p className="text-muted-foreground text-sm mb-4" data-testid={`description-${app.id}`}>
                   {app.description}
                 </p>
-                <div className="flex flex-wrap gap-3 mb-6">
-                  {app.technologies.map((tech) => (
-                    <span 
-                      key={tech}
-                      className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm"
-                      data-testid={`tech-${tech.toLowerCase()}`}
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="flex flex-col gap-2">
+                  <a 
+                    href={app.appUrl}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-primary text-accent-foreground rounded font-semibold text-sm hover:bg-primary/80 transition-all"
+                    data-testid={`app-link-${app.id}`}
+                  >
+                    Visit
+                  </a>
                 </div>
-                <a 
-                  href={app.appUrl}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 cyan-gradient text-accent-foreground rounded-lg font-semibold hover-lift glow-effect transition-all text-lg"
-                  data-testid={`launch-button-${app.id}`}
-                >
-                  <ExternalLink className="w-5 h-5 mr-2" />
-                  Launch Application
-                </a>
               </div>
             ))}
           </div>
