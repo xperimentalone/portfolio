@@ -1,4 +1,4 @@
-import { Box, ExternalLink, Download, Play, ChartBar, Gamepad2, Bot, Route, Globe, Swords, Languages } from "lucide-react";
+import { Box, ExternalLink, Download, Play, ChartBar, Gamepad2, Bot, Route, Globe, Swords, Languages, Newspaper } from "lucide-react";
 import chineseTypingIcon from "@assets/icon_1756456133830.png";
 import knightIcon from "@assets/knight_1756456147514.png";
 import snakeIcon from "@assets/icon_1756456176916.png";
@@ -78,17 +78,17 @@ export default function ProjectsSection() {
       description: 'A comprehensive financial analysis tool built with Streamlit, featuring real-time stock data visualization, technical indicators, and interactive charts for informed investment decisions.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
       appUrl: 'https://stockview-xperimentalone.streamlit.app/',
-      technologies: ['Streamlit', 'Python', 'Data Analysis', 'Finance'],
+      technologies: ['Streamlit', 'Data Analysis', 'Finance'],
       icon: ChartBar
     }, 
     {
       id: 'insight-quest',
       title: 'Insight Quest',
-      description: 'A platform encouraging users to read news and stay informed through interactive and engaging content.',
+      description: 'A platform encouraging users to read news and stay informed through interactive and engaging content by applying the proven Octalysis Gamification Framework.',
       image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
       appUrl: 'https://xperimentalone.github.io/insight-quest/',
-      technologies: ['Web', 'News', 'Education'],
-      icon: Globe 
+      technologies: ['Gemini API', 'News', 'Education'],
+      icon: Newspaper 
     }
   ];
 
@@ -219,20 +219,20 @@ export default function ProjectsSection() {
             <h3 className="text-3xl font-bold text-primary" data-testid="applications-title">Applications</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 max-w-2xl gap-8 mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
             {applications.map((app) => (
-              <div key={app.id} className="project-card rounded-lg p-8 hover-lift" data-testid={`application-${app.id}`}>
+              <div key={app.id} className="project-card rounded-lg p-6 hover-lift" data-testid={`application-${app.id}`}>
                 <div className="mb-6">
                   <img 
                     src={app.image}
                     alt={app.title}
-                    className="w-full h-64 object-cover rounded-lg"
+                    className="w-full h-48 object-cover rounded-lg"
                     data-testid={`image-${app.id}`}
                   />
                 </div>
                 <div className="flex items-center mb-4">
                   <div className="w-8 h-8 cyan-gradient rounded-full flex items-center justify-center mr-3">
-                    <app.icon className="w-6 h-6 text-accent-foreground" />
+                    <app.icon className="w-full h-full text-accent-foreground" />
                   </div>
                   <h4 className="text-2xl font-bold" data-testid={`title-${app.id}`}>{app.title}</h4>
                 </div>
