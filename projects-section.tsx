@@ -170,7 +170,7 @@ export default function ProjectsSection() {
         <div className="mb-20">
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 cyan-gradient rounded-lg flex items-center justify-center mr-4">
-              <Box className="w-6 h-6 text-accent-foreground" />
+              <Box className="w-6 h-6 text-foreground" />
             </div>
             <h3 className="text-3xl font-bold text-secondary" data-testid="unity-projects-title">Unity Projects</h3>
           </div>
@@ -219,7 +219,7 @@ export default function ProjectsSection() {
             <h3 className="text-3xl font-bold text-primary" data-testid="applications-title">Applications</h3>
           </div>
           
-          <div className="grid md:grid-cols-1 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 max-w-2xl gap-8 mx-auto">
             {applications.map((app) => (
               <div key={app.id} className="project-card rounded-lg p-8 hover-lift" data-testid={`application-${app.id}`}>
                 <div className="mb-6">
