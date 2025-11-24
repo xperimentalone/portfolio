@@ -80,15 +80,6 @@ export default function ProjectsSection() {
       appUrl: 'https://stockview-xperimentalone.streamlit.app/',
       technologies: ['Streamlit', 'Data Analysis', 'Finance'],
       icon: ChartBar
-    }, 
-    {
-      id: 'insight-quest',
-      title: 'Insight Quest',
-      description: 'A platform encouraging users to read news and stay informed through interactive and engaging content by applying the proven Octalysis Gamification Framework.',
-      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      appUrl: 'https://xperimentalone.github.io/insightquest/',
-      technologies: ['Gemini API', 'News', 'Education'],
-      icon: Newspaper 
     }
   ];
 
