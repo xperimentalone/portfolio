@@ -11,6 +11,7 @@ import snakeImage from "@assets/snake_preview.png";
 import earthballImage from "@assets/ball_preview.png";
 import findTheWayImage from "@assets/findtheway_preview.png";
 import robotRunImage from "@assets/robotrun_preview.png";
+import cosmoclashImage from "@assets/cosmoclash_preview.png";
 import e from "express";
 
 export default function ProjectsSection() {
@@ -68,6 +69,15 @@ export default function ProjectsSection() {
       downloadUrl: 'https://github.com/xperimentalone/game/blob/main/earthball.exe',
       onlineUrl: 'https://xperimentalone.github.io/ball_online/',
       iconImage: earthballIcon
+    }, 
+    {
+      id: 'cosmoclash',
+      title: 'CosmoClash',
+      description: 'A space-themed shooter game where players battle alien invaders across the galaxy.',
+      image: cosmoclashImage,
+      downloadUrl: 'https://github.com/xperimentalone/cosmoclash/blob/main/cosmoclash.exe',
+      onlineUrl: 'https://xperimentalone.github.io/cosmoclash/',
+      iconImage: cosmoclashImage
     }
   ];
 
