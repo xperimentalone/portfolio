@@ -5,6 +5,7 @@ import snakeIcon from "@assets/icon_1756456176916.png";
 import earthballIcon from "@assets/ball_1756456201103.png";
 import findTheWayIcon from "@assets/icon_image_1756456257186.jpg";
 import robotRunIcon from "@assets/RobotRun_1756462300118.jpeg";
+import cosmoclashIcon from "@assets/cosmoclash_icon.png";
 import chineseTypingImage from "@assets/chintyping_preview.png";
 import knightImage from "@assets/knight_preview.png";
 import snakeImage from "@assets/snake_preview.png";
@@ -77,7 +78,7 @@ export default function ProjectsSection() {
       image: cosmoclashImage,
       downloadUrl: 'https://github.com/xperimentalone/cosmoclash/blob/main/cosmoclash.exe',
       onlineUrl: 'https://xperimentalone.github.io/cosmoclash/',
-      iconImage: cosmoclashImage
+      iconImage: cosmoclashIcon
     }
   ];
 
